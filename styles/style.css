@@ -280,7 +280,7 @@ header{
     }
     /* quick */
     .quick-list--section{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .quick-img-conainer{
         display: flex;
