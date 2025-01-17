@@ -20,6 +20,7 @@ html{
     --dark-03:#727272;
     --dark-04:#A1A1A1;
     --dark-05:#A1A1A1;
+    --FFF: #FFF;
 }
 
 /* common style start */
@@ -32,6 +33,19 @@ a{
 }
 li{
     list-style: none;
+}
+.para{
+    font-size: 1.6rem;
+    color: var(--dark-03);
+    line-height: 2.6rem;
+}
+.btn{
+    color: var(--FFF);
+    background-color: var(--main-color);
+    /* border-color: var(--main-color); */
+    border: 1px solid var(--main-color);
+    border-radius: 0.8rem;
+    cursor: pointer;
 }
 /* common style end */
 
@@ -65,8 +79,45 @@ header{
 .nav-section .nav-link a:hover{
     color: var(--main-color);
 }
+/* navbar style end */
 
-
+/* banner style start */
+.banner-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 10rem;
+}
+.banner-content{
+    max-width: 862px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3.2rem;
+}
+.banner-title{
+    font-size: 6.4rem;
+} 
+.banner-btn{
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 2rem 2.5rem;
+    transition: color 1s linear;
+    transition: background-color 0.2s linear;
+}
+.banner-btn:hover{
+    color: var(--main-color);
+    background-color: transparent;
+}
+.banner-img img{
+    max-width: 100%;
+    width: auto;
+    margin-bottom: 4.5rem;
+}
+/* banner style end */
 /* header style end */
 
 
@@ -90,6 +141,17 @@ header{
     .nav-section .nav-link{
         gap: 1.8rem;
     }
+    /* banner */
+    .banner-section{
+        margin-top: 4rem;
+    }
+    .banner-title{
+        font-size: 4.5rem;
+    }
+    .banner-btn{
+        font-size: 1.8rem;
+        padding: 1.5rem 2rem;
+    }
 }
 /* mobile */
 @media screen and (max-width:425px) {
@@ -106,5 +168,16 @@ header{
         width: 100%;
         justify-content: space-around;
         /* background-color: #FF900E; */
+    }
+    /* banner */
+    .banner-section{
+        margin-top: 2rem;
+    }
+    .banner-title{
+        font-size: 3.5rem;
+    }
+    .banner-btn{
+        font-size: 1.8rem;
+        padding: 1.5rem 2rem;
     }
 }
