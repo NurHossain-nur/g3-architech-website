@@ -39,6 +39,11 @@ li{
     color: var(--dark-03);
     line-height: 2.6rem;
 }
+.title{
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: var(--dark-01);
+}
 .btn{
     color: var(--FFF);
     background-color: var(--main-color);
@@ -120,6 +125,61 @@ header{
 /* banner style end */
 /* header style end */
 
+/* quick section style start */
+.quick-list--section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    gap: 7rem;
+    margin-top: 8.5rem;
+    margin-bottom: 13rem;
+    padding: 0rem 6rem;
+    /* position: relative; */
+}
+.quick-img-conainer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* background-color: #FF900E; */
+    gap: 2.4rem;
+}
+.quick-img-conainer .quick-img{
+    /* background-color: #FF900E; */
+    border-radius: 0.8rem;
+    /* width: 200px;
+    height: 200px;
+    position: relative; */
+}
+.quick-img-conainer .quick-img img{
+    /* width: 100%;
+    height: 100%; */
+    object-fit: cover;
+}
+
+.quick-title .gray{
+    color: var(--dark-03);
+}
+.quick-title .color{
+    color: var(--main-color);
+}
+.quick-description p{
+    margin: 2.4rem 0rem 3rem;
+}
+.quick-btn{
+    padding: 2rem 2.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    transition: color 0.3s linear;
+    transition: background-color 0.2s linear;
+}
+.quick-btn:hover{
+    background-color: transparent;
+    color: var(--main-color);
+}
+/* quick section style end */
+
 
 
 
@@ -129,6 +189,28 @@ header{
     .section{
         padding: 2% 2% 0% 2%;
     }
+}
+/* laptop */
+@media screen and (max-width:1024px) {
+    .quick-img-conainer .quick-img{
+        /* background-color: #FF900E; */
+        width: 25rem;
+        height: 25rem;
+        position: relative;
+    }
+    .quick-img-conainer .quick-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    /* .quick-list--section{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    } */
+     .title{
+        font-size: 3.5rem;
+     }
 }
 /* Tablet */
 @media screen and (max-width:768px) {
@@ -149,6 +231,22 @@ header{
         font-size: 4.5rem;
     }
     .banner-btn{
+        font-size: 1.8rem;
+        padding: 1.5rem 2rem;
+    }
+    /* quite */
+    .quick-img-conainer .quick-img{
+        /* background-color: #FF900E; */
+        width: 20rem;
+        height: 20rem;
+        position: relative;
+    }
+    .quick-img-conainer .quick-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .quick-btn{
         font-size: 1.8rem;
         padding: 1.5rem 2rem;
     }
@@ -179,5 +277,19 @@ header{
     .banner-btn{
         font-size: 1.8rem;
         padding: 1.5rem 2rem;
+    }
+    /* quick */
+    .quick-list--section{
+        flex-direction: column;
+    }
+    .quick-img-conainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .quick-img-conainer .quick-img{
+        /* background-color: #FF900E; */
+        width: 100%;
+        height: 100%;
+        position: relative;
     }
 }
