@@ -334,6 +334,23 @@ header{
 }
 /* sponspors section style end */
 
+/* footer section style start */
+.footer-section{
+    background-color: #FFF4E7;
+    border-radius: 0.8rem;
+    margin-bottom: 20rem;
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.footer-section p{
+    font-size: 2rem;
+    text-align: center;
+    padding: 3.8rem;
+}
+/* footer section style end */
+
 
 
 
