@@ -20,7 +20,7 @@ html{
     --dark-03:#727272;
     --dark-04:#A1A1A1;
     --dark-05:#A1A1A1;
-    --FFF: #FFF;
+    --FFF: #FFFFFF;
 }
 
 /* common style start */
@@ -255,6 +255,55 @@ header{
 }
 /* feature section style end */
 
+/* fact section style start */
+.fact-section{
+    margin-bottom: 18rem;
+}
+.fact-title{
+    margin-bottom: 2.4rem;
+}
+.fact-para{
+    margin-bottom: 10rem;
+}
+.fact-boxs{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 12.4rem;
+}
+.fact-boxs .box{
+    border: 1px solid var(--main-color);
+    border-radius: 0.8rem;
+    width: 24.1rem;
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s linear;
+}
+.fact-boxs .box:hover{
+    background-color: rgba(255, 144, 14, 0.15);
+    /* color: white; */
+}
+.fact-boxs .box img{
+    width: 4.5rem;
+    aspect-ratio: 1;
+    margin-bottom: 1rem;
+}
+.fact-boxs .box .number{
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: var(--dark-02);
+}
+.fact-boxs .box .name{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--dark-03);
+    margin-top: 0.5rem;
+}
+/* fact section style end */
+
 
 
 
@@ -311,6 +360,14 @@ header{
         font-size: 1.5em;
         font-weight: 500;
         line-height: 2rem;
+    }
+    /* facts */
+    .fact-boxs{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 5rem;
+        column-gap: 5rem;
     }
 }
 /* Tablet */
@@ -371,6 +428,13 @@ header{
      .feature-img{
         width: 70%;
         height: auto;
+     }
+     /* facts */
+     .fact-para{
+        margin-bottom: 7rem;
+     }
+     .fact-section{
+        margin-bottom: 11rem;
      }
 }
 /* mobile */
